@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95c8ae33-f504-4345-a378-c1ee395c2605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DescriptionByIndeed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DescriptionByYahoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DescriptionSuppler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Extractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="95c8ae33-f504-4345-a378-c1ee395c2605" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsoupConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionByIndeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IndeedDescriptionExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionByYahoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/YahooDescriptionExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionSuppler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DescriptionsSuppler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompanyNameExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +72,18 @@
       <workItem from="1658855392703" duration="6930000" />
       <workItem from="1659029777420" duration="6933000" />
       <workItem from="1659113715168" duration="12857000" />
+      <workItem from="1659126698703" duration="400000" />
+      <workItem from="1659167233304" duration="2466000" />
+      <workItem from="1659277277836" duration="4940000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1659126828833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659126828833</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,26 +94,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Extractor.java</url>
-          <line>13</line>
-          <properties class="Extractor" method="getTicker">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="tableRowElements" />
