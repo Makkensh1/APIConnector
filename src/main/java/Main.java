@@ -1,13 +1,11 @@
 import java.io.IOException;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-
-        try {
-            System.out.println(DescriptionsSuppler.getDescriptions(50));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        System.out.println(new Date());
+        System.out.println(DescriptionsCollector.accumulateDescriptions(50));
+        System.out.println(new Date());
         }
     }
 
-}

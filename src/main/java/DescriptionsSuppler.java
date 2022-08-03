@@ -1,29 +1,31 @@
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class DescriptionsSuppler {
 
-    public static String getDescriptions(int quantity) throws IOException {
-        int index = 1;
-        Map<String, String> tickers = CompanyNameExtractor.getTickers();
-        if (quantity <0 || quantity > tickers.size()) {
-            throw new RuntimeException("number must be between 0 and 100");
-        }
+    public static String getDescriptions() {
+
+        CompanyNameExtractor.getTickers();
         StringBuilder result = new StringBuilder();
-        Iterator<Map.Entry<String, String>> iterator = tickers.entrySet().iterator();
-        while (index <= quantity && iterator.hasNext()) {
-            Map.Entry<String, String> entry = iterator.next();
-            result
-                    .append(index++)
-                    .append(". ")
-                    .append(entry.getValue())
-                    .append(" ")
-                    .append(YahooDescriptionExtractor.getDescriptionFromYahoo(entry.getKey()))
-                    .append("and ")
-                    .append(IndeedDescriptionExtractor.getDescriptionFromIndeed(entry.getValue()))
-                    .append("\n");
-        }
+        result.append(CompanyNameExtractor.compName.getFirst()).append(" ");
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        Future<String> yahooDescr = executorService.submit(new YahooDescriptionExtractor());
+        Future<String> indeedDescr = executorService.submit(new IndeedDescriptionExtractor());
+
+            try {
+                result.append(yahooDescr.get())
+                        .append(" ")
+                        .append(indeedDescr.get());
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            } catch (ExecutionException e) {
+                throw new RuntimeException(e);
+            }finally {
+                executorService.shutdown();
+            }
+
         return result.toString();
     }
 }

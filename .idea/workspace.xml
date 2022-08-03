@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95c8ae33-f504-4345-a378-c1ee395c2605" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsoupConnector.java" afterDir="false" />
+    <list default="true" id="95c8ae33-f504-4345-a378-c1ee395c2605" name="Changes" comment="refactored classes&#10;added clas JsoupConnector">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DescriptionsCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionByIndeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IndeedDescriptionExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionByYahoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/YahooDescriptionExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionSuppler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DescriptionsSuppler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompanyNameExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompanyNameExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CompanyNameExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DescriptionsSuppler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DescriptionsSuppler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IndeedDescriptionExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IndeedDescriptionExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsoupConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsoupConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/YahooDescriptionExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/YahooDescriptionExtractor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,6 +77,8 @@
       <workItem from="1659126698703" duration="400000" />
       <workItem from="1659167233304" duration="2466000" />
       <workItem from="1659277277836" duration="4940000" />
+      <workItem from="1659470923382" duration="68000" />
+      <workItem from="1659540628731" duration="3688000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1659126828833</created>
